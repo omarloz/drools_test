@@ -1,0 +1,12 @@
+package myAppRules;
+
+import co.com.ikitech.model.productprice.ProductPrice;
+
+dialect  "mvel"
+
+rule "Adjust Product Price"
+    when
+     $p : ProductPrice(basePrice > 2 )
+    then
+     System.out.println("EJECUTANDO -Adjust Product Price- para el producto [" + $p.toString() + "]");
+end

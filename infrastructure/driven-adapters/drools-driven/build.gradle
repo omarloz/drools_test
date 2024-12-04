@@ -1,0 +1,10 @@
+dependencies {
+    implementation project(':model')
+    implementation 'org.springframework:spring-context'
+
+    //Drools
+    implementation group: 'org.drools', name: 'drools-core', version: '9.44.0.Final'
+    implementation group: 'org.drools', name: 'drools-mvel', version: '9.44.0.Final'
+    implementation group: 'org.kie', name: 'kie-api', version: '9.44.0.Final'
+    implementation group: 'org.drools', name: 'drools-compiler', version: '9.44.0.Final'
+}
